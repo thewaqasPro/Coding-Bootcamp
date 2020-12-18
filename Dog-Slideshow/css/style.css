@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  html {
+    position: relative;
+  }
+  body {
+    background: #edecf6;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+ 
+  .card {  
+    background: #fff;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px #d6d3ee;
+  }
+  .card-title {
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 24px;
+    color: #17192f;
+    /* margin: 20px 0 10px 0; */
+  }
+  
+  .card-sub-title {
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 14px;
+    color: #17192f;
+    margin: 5px 10px;
+  }
+
+
+
+  /* Select */
+  .select-style {
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    width: 260px;
+    border-radius: 3px;
+    overflow: hidden;
+    /* background: #fafafa url("../img/icon-select.png") no-repeat 90% 50%; */
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+
+.slideshow {  
+    position: relative;
+    background: #333;
+    margin-top: 20px;
+    width: 100vh;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px #d6d3ee;
+  }
+.slide {
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    opacity: 0;
+    transform: scale(1);
+    transition: all .9s ease-out;
+}
+.slide:nth-last-child(2) {
+    opacity: 1;
+    transform: scale(1.08);
+}
