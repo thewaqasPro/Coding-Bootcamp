@@ -33,7 +33,6 @@
     font-weight: 700;
     font-size: 24px;
     color: #17192f;
-    /* margin: 20px 0 10px 0; */
   }
   
   .card-sub-title {
@@ -53,7 +52,6 @@
     width: 260px;
     border-radius: 3px;
     overflow: hidden;
-    /* background: #fafafa url("../img/icon-select.png") no-repeat 90% 50%; */
 }
 
 .select-style select {
