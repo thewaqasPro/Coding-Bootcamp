@@ -1,4 +1,4 @@
-et timer
+let timer
 let deleteFirstPhotoDelay
 
 async function start() {
