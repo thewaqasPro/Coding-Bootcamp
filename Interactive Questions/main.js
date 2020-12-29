@@ -58,3 +58,37 @@ function handleSubmit(e) {
   }
   checkLogic()
 }
+
+
+
+function checkLogic() {
+  // if you won
+  if (state.score === 10) {
+    endMessage.textContent = "Congrats! You won."
+    document.body.classList.add("overlay-is-open")
+    setTimeout(() => resetButton.focus(), 331)
+  }
+
+  // if you lost
+  if (state.wrongAnswers === 3) {
+    endMessage.textContent = "Sorry! You lost."
+    document.body.classList.add("overlay-is-open")
+    setTimeout(() => resetButton.focus(), 331)
+  }
+}
+
+resetButton.addEventListener("click", resetGame)
+
+function resetGame() {
+  document.body.classList.remove("overlay-is-open")
+  updateProblem()
+  state.score = 0
+  state.wrongAnswers = 0
+  pointsNeeded.textContent = 10
+  mistakesAllowed.textContent = 2
+  renderProgressBar()
+}
+
+function renderProgressBar() {
+  progressBar.style.transform = `scaleX(${state.score / 10})`
+}
