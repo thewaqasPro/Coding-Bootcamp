@@ -1,5 +1,13 @@
 function myFunc () {
-    console.log("Hello from Functions");
+    console.log("========================================================");
 }
 
-module.exports =  myFunc
+var foo = 5
+
+module.exports =  {
+    myFunc:     myFunc,
+    foo:        foo
+}
+
+
+console.log(module);
