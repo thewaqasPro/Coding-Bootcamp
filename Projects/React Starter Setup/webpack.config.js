@@ -1,6 +1,6 @@
-const currentTask = process.env.npm_lifecycle_event
+const currentTask               = process.env.npm_lifecycle_event
 
-const path = require('path') 
+const path                      = require('path') 
 
 const MiniCssExtractPlugin      = require( 'mini-css-extract-plugin')
 const HtmlWebpackPlugin         = require( 'html-webpack-plugin')
@@ -9,11 +9,11 @@ const {WebpackManifestPlugin}   = require( 'webpack-manifest-plugin')
 
 const config = 
 {
-    entry: './app/app.js',
+    entry:          './app/app.js',
     output: 
     {
-        filename: 'bundle.[hash].js',
-        path: path.resolve(__dirname, 'docs')
+        filename:   'bundle.[hash].js',
+        path:       path.resolve( __dirname, 'docs' )
     },
     plugins: 
     [ 
@@ -24,25 +24,25 @@ const config =
             } 
         ) 
     ],
-    mode: 'development',
-    devtool: 'eval-cheap-source-map',
+    mode:       'development',
+    devtool:    'eval-cheap-source-map',
     devServer: 
     {
-        port: 8080,
-        contentBase: path.resolve(__dirname, 'dist'),
-        hot: true
+        port:           8080,
+        contentBase:    path.resolve( __dirname, 'dist' ),
+        hot:            true
     },
     module: 
     {
         rules: 
         [   
             {
-                test: /\.scss$/,
-                use: ['style-loader', 'css-loader', 'sass-loader'] 
+                test:       /\.scss$/,
+                use:        ['style-loader', 'css-loader', 'sass-loader'] 
             },
             {
-                test: /\.js$/,
-                exclude: /(node_modules|bower_components)/,
+                test:       /\.js$/,
+                exclude:    /(node_modules|bower_components)/,
                 use: {
                     loader: 'babel-loader',
                     options: {
