@@ -1,9 +1,8 @@
 function myFunc () {
-    console.log("========================================================");
+    console.log("================================================");
 }
 
 var foo = 5
-
 module.exports =  {
     myFunc:     myFunc,
     foo:        foo
