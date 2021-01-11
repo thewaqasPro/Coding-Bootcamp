@@ -7,7 +7,6 @@ const progressBar = document.querySelector(".progress-inner")
 const endMessage = document.querySelector(".end-message")
 const resetButton = document.querySelector(".reset-button")
 
-
 let state = {
   score: 0,
   wrongAnswers: 0
@@ -33,7 +32,6 @@ function generateProblem() {
   }
 }
 
-
 ourForm.addEventListener("submit", handleSubmit)
 
 function handleSubmit(e) {
@@ -58,7 +56,6 @@ function handleSubmit(e) {
   }
   checkLogic()
 }
-
 
 
 function checkLogic() {
