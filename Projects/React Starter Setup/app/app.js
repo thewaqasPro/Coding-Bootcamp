@@ -63,7 +63,8 @@ function App() {
       <>
         <div className={"main-ui" + (mistakes == 3 || score == 10 ? " blurred" : "")}>
           <p className={"problem" + (showError ? " animate-wrong" : "")}>
-            {currentProblem.numberOne} {currentProblem.operator}{" "}
+            {currentProblem.numberOne} 
+            {currentProblem.operator}{" "}
             {currentProblem.numberTwo}
           </p>
   
