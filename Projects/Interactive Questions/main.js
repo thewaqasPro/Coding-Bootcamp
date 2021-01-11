@@ -57,7 +57,6 @@ function handleSubmit(e) {
   checkLogic()
 }
 
-
 function checkLogic() {
   // if you won
   if (state.score === 10) {
