@@ -36,9 +36,12 @@ function App() {
       answerField.current.focus()
   
       let correctAnswer
-      if (currentProblem.operator == "+") correctAnswer = currentProblem.numberOne + currentProblem.numberTwo
-      if (currentProblem.operator == "-") correctAnswer = currentProblem.numberOne - currentProblem.numberTwo
-      if (currentProblem.operator == "x") correctAnswer = currentProblem.numberOne * currentProblem.numberTwo
+      if (currentProblem.operator == "+") 
+        correctAnswer = currentProblem.numberOne + currentProblem.numberTwo
+      if (currentProblem.operator == "-") 
+        correctAnswer = currentProblem.numberOne - currentProblem.numberTwo
+      if (currentProblem.operator == "x") 
+        correctAnswer = currentProblem.numberOne * currentProblem.numberTwo
   
       if (correctAnswer == parseInt(userAnswer, 10)) {
         setScore((prev) => prev + 1)
