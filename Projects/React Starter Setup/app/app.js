@@ -87,7 +87,9 @@ function App() {
             You need {10 - score} more points, and are allowed to make{" "}
             {2 - mistakes} more mistakes.
           </p>
+
           <ProgressBar score={score} />
+          
         </div>
   
         <div className={"overlay" + (mistakes == 3 || score == 10 ? " overlay--visible" : "")}>
