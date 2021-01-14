@@ -75,7 +75,8 @@ function checkLogic() {
 
 resetButton.addEventListener("click", resetGame)
 
-function resetGame() {
+function resetGame() 
+{
   document.body.classList.remove("overlay-is-open")
   updateProblem()
   state.score = 0
@@ -85,6 +86,7 @@ function resetGame() {
   renderProgressBar()
 }
 
-function renderProgressBar() {
+function renderProgressBar() 
+{
   progressBar.style.transform = `scaleX(${state.score / 10})`
 }
