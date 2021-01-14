@@ -3,7 +3,8 @@ import React, { useState, useEffect, useRef } from 'react'
 import ReactDOM from 'react-dom'
 import ProgressBar from './components/progressBar'
 
-function App() {
+function App() 
+{
     const [score, setScore] = useState(0)
     const [mistakes, setMistakes] = useState(0)
     const [currentProblem, setCurrentProblem] = useState(generateProblem())
@@ -87,7 +88,6 @@ function App() {
             You need {10 - score} more points, and are allowed to make{" "}
             {2 - mistakes} more mistakes.
           </p>
-
           <ProgressBar score={score} />
           
         </div>
@@ -106,6 +106,7 @@ function App() {
   
 ReactDOM.render(<App />, document.getElementById("app"))
   
+
 if (module.hot) {
     module.hot.accept()
 }
