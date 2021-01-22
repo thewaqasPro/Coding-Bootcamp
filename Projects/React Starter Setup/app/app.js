@@ -1,7 +1,7 @@
 import './styles/bundle.scss'
 import React, { useState, useEffect, useRef } from 'react'
-import ReactDOM from 'react-dom'
-import ProgressBar from './components/progressBar'
+import ReactDOM     from 'react-dom'
+import ProgressBar  from './components/progressBar'
 
 function App() 
 {
